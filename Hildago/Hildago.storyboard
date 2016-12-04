@@ -12,10 +12,12 @@
         <!--Navigation Controller-->
         <scene sceneID="A2t-5V-qPc">
             <objects>
-                <navigationController id="rab-JI-Ac0" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="j1o-QZ-Cfj">
+                <navigationController toolbarHidden="NO" id="rab-JI-Ac0" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="j1o-QZ-Cfj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <connections>
                         <segue destination="Jvf-iI-x0F" kind="relationship" relationship="rootViewController" id="mnn-xU-2ph"/>
@@ -34,13 +36,17 @@
                         <viewControllerLayoutGuide type="bottom" id="mLM-p6-uMh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qPn-eV-v5J">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="WYc-nj-gC6">
-                        <barButtonItem key="leftBarButtonItem" title="Chats" id="vOF-3O-cpR"/>
-                        <barButtonItem key="rightBarButtonItem" title="Contacts" id="Rxr-sZ-U4d"/>
+                        <barButtonItem key="leftBarButtonItem" title="Chats" id="vOF-3O-cpR">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Contacts" id="Rxr-sZ-U4d">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10i-vU-ySt" userLabel="First Responder" sceneMemberID="firstResponder"/>

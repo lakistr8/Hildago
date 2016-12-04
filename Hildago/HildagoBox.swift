@@ -19,7 +19,7 @@ class HildagoBox: UIView {
     @IBOutlet weak var chatButton : UIButton!
     @IBOutlet weak var contactButton : UIButton!
     
-    var delegate : HildagoBoxDelegate?
+    weak var delegate : HildagoBoxDelegate?
     
     @IBAction func didTapContactButton(_ sender: UIButton) {
         delegate?.hildagoBocIntiatedChagne(self)

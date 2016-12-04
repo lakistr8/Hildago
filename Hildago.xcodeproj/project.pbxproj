@@ -10,6 +10,7 @@
 		E8DF42331DF42E6C00CE7C38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DF42321DF42E6C00CE7C38 /* AppDelegate.swift */; };
 		E8DF423A1DF42E6C00CE7C38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8DF42391DF42E6C00CE7C38 /* Assets.xcassets */; };
 		E8DF423D1DF42E6C00CE7C38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8DF423B1DF42E6C00CE7C38 /* LaunchScreen.storyboard */; };
+		E8DF42451DF4300000CE7C38 /* Hildago.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8DF42441DF4300000CE7C38 /* Hildago.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,7 @@
 		E8DF42391DF42E6C00CE7C38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8DF423C1DF42E6C00CE7C38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8DF423E1DF42E6C00CE7C38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8DF42441DF4300000CE7C38 /* Hildago.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Hildago.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 				E8DF42321DF42E6C00CE7C38 /* AppDelegate.swift */,
 				E8DF42391DF42E6C00CE7C38 /* Assets.xcassets */,
 				E8DF423B1DF42E6C00CE7C38 /* LaunchScreen.storyboard */,
+				E8DF42441DF4300000CE7C38 /* Hildago.storyboard */,
 				E8DF423E1DF42E6C00CE7C38 /* Info.plist */,
 			);
 			path = Hildago;
@@ -117,6 +120,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8DF42451DF4300000CE7C38 /* Hildago.storyboard in Resources */,
 				E8DF423D1DF42E6C00CE7C38 /* LaunchScreen.storyboard in Resources */,
 				E8DF423A1DF42E6C00CE7C38 /* Assets.xcassets in Resources */,
 			);

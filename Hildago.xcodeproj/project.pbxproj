@@ -11,6 +11,7 @@
 		E8DF423A1DF42E6C00CE7C38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8DF42391DF42E6C00CE7C38 /* Assets.xcassets */; };
 		E8DF423D1DF42E6C00CE7C38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8DF423B1DF42E6C00CE7C38 /* LaunchScreen.storyboard */; };
 		E8DF42451DF4300000CE7C38 /* Hildago.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8DF42441DF4300000CE7C38 /* Hildago.storyboard */; };
+		E8DF42471DF4363300CE7C38 /* HildagoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DF42461DF4363300CE7C38 /* HildagoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		E8DF423C1DF42E6C00CE7C38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8DF423E1DF42E6C00CE7C38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8DF42441DF4300000CE7C38 /* Hildago.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Hildago.storyboard; sourceTree = "<group>"; };
+		E8DF42461DF4363300CE7C38 /* HildagoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HildagoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				E8DF42391DF42E6C00CE7C38 /* Assets.xcassets */,
 				E8DF423B1DF42E6C00CE7C38 /* LaunchScreen.storyboard */,
 				E8DF42441DF4300000CE7C38 /* Hildago.storyboard */,
+				E8DF42461DF4363300CE7C38 /* HildagoController.swift */,
 				E8DF423E1DF42E6C00CE7C38 /* Info.plist */,
 			);
 			path = Hildago;
@@ -133,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8DF42471DF4363300CE7C38 /* HildagoController.swift in Sources */,
 				E8DF42331DF42E6C00CE7C38 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

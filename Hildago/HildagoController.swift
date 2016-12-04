@@ -30,3 +30,12 @@ extension HildagoController : HildagoBoxDelegate {
     }
     
 }
+
+
+extension HildagoController : ContactsControllerDelegate {
+    
+    func contact(controller : ContactsController, didSelect contact: String ) {
+        
+    }
+    
+}

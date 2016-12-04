@@ -117,16 +117,16 @@
             </objects>
             <point key="canvasLocation" x="549.60000000000002" y="141.67916041979012"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Contacts Controller-->
         <scene sceneID="YAU-LI-cqp">
             <objects>
-                <tableViewController id="l2z-hH-Ts1" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ContactsController" id="l2z-hH-Ts1" customClass="ContactsController" customModule="Hildago" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="EPh-zM-BDV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="eaC-Po-YgW">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactsCell" id="eaC-Po-YgW" customClass="ContactsCell" customModule="Hildago" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eaC-Po-YgW" id="Dea-nb-9w3">
@@ -143,7 +143,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LOU-hz-ARn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1194" y="144"/>
+            <point key="canvasLocation" x="1212" y="142"/>
         </scene>
     </scenes>
     <resources>

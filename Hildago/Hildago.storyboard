@@ -43,7 +43,7 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="bcg2" translatesAutoresizingMaskIntoConstraints="NO" id="vyY-Bb-tJt">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ULe-Hz-oS3">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ULe-Hz-oS3" customClass="HildagoBox" customModule="Hildago" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="64" width="375" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yr2-Fy-g4q">
@@ -70,20 +70,45 @@
                                     <constraint firstAttribute="bottom" secondItem="Yr2-Fy-g4q" secondAttribute="bottom" id="jhe-WM-tPa"/>
                                     <constraint firstItem="Yr2-Fy-g4q" firstAttribute="top" secondItem="ULe-Hz-oS3" secondAttribute="top" id="vKi-MM-yIJ"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="chatButton" destination="Yr2-Fy-g4q" id="2sP-Br-qoc"/>
+                                    <outlet property="contactButton" destination="acZ-J3-TyM" id="4Sp-fM-g1m"/>
+                                </connections>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PDC-7t-Fcy">
+                                <rect key="frame" x="0.0" y="114" width="375" height="553"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="8Ms-4u-Ca3">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Ms-4u-Ca3" id="JXi-yz-U9J">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="PDC-7t-Fcy" secondAttribute="trailing" id="2il-ir-Q3i"/>
+                            <constraint firstItem="PDC-7t-Fcy" firstAttribute="leading" secondItem="qPn-eV-v5J" secondAttribute="leading" id="3hf-Ju-qmc"/>
                             <constraint firstAttribute="trailing" secondItem="ULe-Hz-oS3" secondAttribute="trailing" id="AG5-zX-n6a"/>
                             <constraint firstAttribute="trailing" secondItem="vyY-Bb-tJt" secondAttribute="trailing" id="OrB-ES-cln"/>
                             <constraint firstAttribute="bottomMargin" secondItem="vyY-Bb-tJt" secondAttribute="bottom" id="R6L-Af-dXo"/>
                             <constraint firstItem="vyY-Bb-tJt" firstAttribute="top" secondItem="0IX-0R-sph" secondAttribute="bottom" id="Tbb-Jb-xkK"/>
                             <constraint firstItem="ULe-Hz-oS3" firstAttribute="top" secondItem="0IX-0R-sph" secondAttribute="bottom" id="XPu-RP-tZ5"/>
+                            <constraint firstItem="PDC-7t-Fcy" firstAttribute="top" secondItem="ULe-Hz-oS3" secondAttribute="bottom" id="hTD-dz-8iz"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="PDC-7t-Fcy" secondAttribute="bottom" id="kpe-6s-ot0"/>
                             <constraint firstItem="ULe-Hz-oS3" firstAttribute="leading" secondItem="qPn-eV-v5J" secondAttribute="leading" id="ose-tp-nKB"/>
                             <constraint firstItem="vyY-Bb-tJt" firstAttribute="leading" secondItem="qPn-eV-v5J" secondAttribute="leading" id="qbf-cK-JZb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="HILDAGO" id="WYc-nj-gC6"/>
+                    <connections>
+                        <outlet property="chatTableView" destination="PDC-7t-Fcy" id="aJW-uk-6NH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10i-vU-ySt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

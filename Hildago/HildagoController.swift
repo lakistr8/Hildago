@@ -9,10 +9,13 @@
 import UIKit
 
 class HildagoController: UIViewController {
+    
+    @IBOutlet weak var chatTableView : UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.chatTableView.backgroundColor = UIColor.clear
         
     }
 }

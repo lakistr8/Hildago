@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol HildagoBoxDelegate :  {
+protocol HildagoBoxDelegate : class {
     
     func hildagoBocIntiatedChagne(_ hildagoBox : HildagoBox )
     
@@ -19,5 +19,9 @@ class HildagoBox: UIView {
     @IBOutlet weak var chatButton : UIButton!
     @IBOutlet weak var contactButton : UIButton!
     
+    var delegate : HildagoBoxDelegate?
     
+    @IBAction func didTapContactButton(_ sender: UIButton) {
+        delegate?.hildagoBocIntiatedChagne(self)
+    }
 }

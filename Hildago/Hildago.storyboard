@@ -55,6 +55,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acZ-J3-TyM">
                                         <rect key="frame" x="188" y="0.0" width="187" height="50"/>
                                         <state key="normal" title="Contacts"/>
+                                        <connections>
+                                            <action selector="didTapContactButton:" destination="ULe-Hz-oS3" eventType="touchUpInside" id="CAH-7v-Nbw"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

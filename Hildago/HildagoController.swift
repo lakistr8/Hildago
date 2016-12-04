@@ -11,6 +11,8 @@ import UIKit
 class HildagoController: UIViewController {
     
     @IBOutlet weak var chatTableView : UITableView!
+    
+    var changeHildagoBox : HildagoBoxDelegate? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,4 +20,13 @@ class HildagoController: UIViewController {
         self.chatTableView.backgroundColor = UIColor.clear
         
     }
+}
+
+
+extension HildagoController : HildagoBoxDelegate {
+    
+    func hildagoBocIntiatedChagne(_ hildagoBox : HildagoBox ) {
+        
+    }
+    
 }

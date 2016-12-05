@@ -7,5 +7,22 @@
 //
 
 import Foundation
+import UIKit
 
 
+class Contact {
+    
+    let name : String
+    let image : UIImageView?
+    
+    
+    init?(name: String, image: UIImageView?) {
+        
+        self.name = name
+        self.image = image
+        
+        
+    }
+    
+    
+}

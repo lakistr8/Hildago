@@ -15,6 +15,7 @@
 		E8DF42491DF4405000CE7C38 /* HildagoBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DF42481DF4405000CE7C38 /* HildagoBox.swift */; };
 		E8DF424B1DF4436C00CE7C38 /* ContactsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DF424A1DF4436C00CE7C38 /* ContactsController.swift */; };
 		E8DF424D1DF443B800CE7C38 /* ContactsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DF424C1DF443B800CE7C38 /* ContactsCell.swift */; };
+		E8ECF2081DF5A86B00F0484B /* Conctact.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ECF2071DF5A86B00F0484B /* Conctact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E8DF42481DF4405000CE7C38 /* HildagoBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HildagoBox.swift; sourceTree = "<group>"; };
 		E8DF424A1DF4436C00CE7C38 /* ContactsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsController.swift; sourceTree = "<group>"; };
 		E8DF424C1DF443B800CE7C38 /* ContactsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsCell.swift; sourceTree = "<group>"; };
+		E8ECF2071DF5A86B00F0484B /* Conctact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conctact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				E8DF42441DF4300000CE7C38 /* Hildago.storyboard */,
 				E8DF42461DF4363300CE7C38 /* HildagoController.swift */,
 				E8DF42481DF4405000CE7C38 /* HildagoBox.swift */,
+				E8ECF2071DF5A86B00F0484B /* Conctact.swift */,
 				E8DF424A1DF4436C00CE7C38 /* ContactsController.swift */,
 				E8DF424C1DF443B800CE7C38 /* ContactsCell.swift */,
 				E8DF423E1DF42E6C00CE7C38 /* Info.plist */,
@@ -147,6 +150,7 @@
 			files = (
 				E8DF42471DF4363300CE7C38 /* HildagoController.swift in Sources */,
 				E8DF42331DF42E6C00CE7C38 /* AppDelegate.swift in Sources */,
+				E8ECF2081DF5A86B00F0484B /* Conctact.swift in Sources */,
 				E8DF424D1DF443B800CE7C38 /* ContactsCell.swift in Sources */,
 				E8DF424B1DF4436C00CE7C38 /* ContactsController.swift in Sources */,
 				E8DF42491DF4405000CE7C38 /* HildagoBox.swift in Sources */,
@@ -303,6 +307,7 @@
 				E8DF42431DF42E6C00CE7C38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

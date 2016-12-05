@@ -14,7 +14,7 @@
         <scene sceneID="A2t-5V-qPc">
             <objects>
                 <navigationController id="rab-JI-Ac0" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="j1o-QZ-Cfj">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="j1o-QZ-Cfj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -41,22 +41,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="bcg2" translatesAutoresizingMaskIntoConstraints="NO" id="vyY-Bb-tJt">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="94" width="375" height="573"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ULe-Hz-oS3" customClass="HildagoBox" customModule="Hildago" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="64" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="94" width="375" height="50"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yr2-Fy-g4q">
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yr2-Fy-g4q">
                                         <rect key="frame" x="0.0" y="0.0" width="187" height="50"/>
-                                        <state key="normal" title="Chat">
+                                        <state key="normal">
                                             <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acZ-J3-TyM">
                                         <rect key="frame" x="188" y="0.0" width="187" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="Contacts"/>
                                         <connections>
                                             <action selector="didTapContactButton:" destination="ULe-Hz-oS3" eventType="touchUpInside" id="CAH-7v-Nbw"/>
+                                            <segue destination="l2z-hH-Ts1" kind="show" identifier="ContactsController" id="2hY-MX-WP6"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -79,14 +81,14 @@
                                 </connections>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PDC-7t-Fcy">
-                                <rect key="frame" x="0.0" y="114" width="375" height="553"/>
+                                <rect key="frame" x="0.0" y="144" width="375" height="523"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="8Ms-4u-Ca3">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Ms-4u-Ca3" id="JXi-yz-U9J">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -108,7 +110,7 @@
                             <constraint firstItem="vyY-Bb-tJt" firstAttribute="leading" secondItem="qPn-eV-v5J" secondAttribute="leading" id="qbf-cK-JZb"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="HILDAGO" id="WYc-nj-gC6"/>
+                    <navigationItem key="navigationItem" title="HILDAGO" prompt="Chat" id="WYc-nj-gC6"/>
                     <connections>
                         <outlet property="chatTableView" destination="PDC-7t-Fcy" id="aJW-uk-6NH"/>
                     </connections>
@@ -121,18 +123,19 @@
         <scene sceneID="YAU-LI-cqp">
             <objects>
                 <tableViewController storyboardIdentifier="ContactsController" id="l2z-hH-Ts1" customClass="ContactsController" customModule="Hildago" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="1" sectionHeaderHeight="26" sectionFooterHeight="28" id="EPh-zM-BDV">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="26" sectionFooterHeight="28" id="EPh-zM-BDV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactsCell" rowHeight="60" id="eaC-Po-YgW" customClass="ContactsCell" customModule="Hildago" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="26" width="375" height="60"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactsCell" rowHeight="66" id="eaC-Po-YgW" customClass="ContactsCell" customModule="Hildago" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="26" width="375" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eaC-Po-YgW" id="Dea-nb-9w3">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -140,10 +143,11 @@
                             <outlet property="delegate" destination="l2z-hH-Ts1" id="9SB-Kh-Kfh"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="PLA-Nh-3zm"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LOU-hz-ARn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1212" y="142"/>
+            <point key="canvasLocation" x="1396" y="141.67916041979012"/>
         </scene>
     </scenes>
     <resources>

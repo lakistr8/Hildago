@@ -8,19 +8,17 @@
 
 import UIKit
 
-protocol ContactsControllerDelegate : class {
-    
-    func contact(controller : ContactsController, didSelect contact: String )
-}
+
 
 
 class ContactsController: UITableViewController {
     
-    weak var delegate : ContactsControllerDelegate? = nil
+    var contacts = [String]()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.tableView.backgroundView = UIImageView(image: #imageLiteral(resourceName: "bcg1"))
     }
 }
 
@@ -44,6 +42,20 @@ extension ContactsController {
         
         
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ContactsController" {
+            let contactsViewController = segue.destination as! ContactsController
+            
+            if let contactCell = sender as? ContactsCell {
+                let indexPath = tableView.indexPath(for: contactCell)
+                let selectedContect =  contacts[(indexPath?.row)!]
+                contactsViewController.contacts = [selectedContect]
+            }
+            
+            
+        }
     }
     
 }

@@ -47,14 +47,6 @@ extension ContactsController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ContactsController" {
             let contactsViewController = segue.destination as! ContactsController
-            
-            if let contactCell = sender as? ContactsCell {
-                let indexPath = tableView.indexPath(for: contactCell)
-                let selectedContect =  contacts[(indexPath?.row)!]
-                contactsViewController.contacts = [selectedContect]
-            }
-            
-            
         }
     }
     

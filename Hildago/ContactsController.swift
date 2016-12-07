@@ -13,7 +13,7 @@ import UIKit
 
 class ContactsController: UITableViewController {
     
-    var contacts = [String]()
+    var contacts = [Contact]()
     
 
     override func viewDidLoad() {

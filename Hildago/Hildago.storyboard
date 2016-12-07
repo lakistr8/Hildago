@@ -195,20 +195,53 @@
                         <viewControllerLayoutGuide type="top" id="1Xy-9U-Qyg"/>
                         <viewControllerLayoutGuide type="bottom" id="Iev-fa-4Dz"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="b2o-P4-bKV">
+                    <view key="view" contentMode="scaleToFill" id="b2o-P4-bKV" userLabel="keyBoard">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="bcg3" translatesAutoresizingMaskIntoConstraints="NO" id="dcj-Bp-B0f">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tsf-NP-Z1B">
+                                <rect key="frame" x="0.0" y="618" width="375" height="44"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type a massage" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W17-Um-cks">
+                                        <rect key="frame" x="30" y="0.0" width="270" height="44"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCy-wD-siM">
+                                        <rect key="frame" x="315" y="0.0" width="30" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="&gt;">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="MCy-wD-siM" firstAttribute="centerY" secondItem="W17-Um-cks" secondAttribute="centerY" id="76y-gf-ng0"/>
+                                    <constraint firstItem="MCy-wD-siM" firstAttribute="leading" secondItem="W17-Um-cks" secondAttribute="trailing" constant="15" id="EnW-Cy-tam"/>
+                                    <constraint firstItem="W17-Um-cks" firstAttribute="leading" secondItem="tsf-NP-Z1B" secondAttribute="leading" constant="30" id="TTr-Un-ZNg"/>
+                                    <constraint firstItem="W17-Um-cks" firstAttribute="top" secondItem="tsf-NP-Z1B" secondAttribute="top" id="Z8P-Dm-c9s"/>
+                                    <constraint firstAttribute="bottom" secondItem="W17-Um-cks" secondAttribute="bottom" id="fh1-Dk-H0d"/>
+                                    <constraint firstAttribute="trailing" secondItem="MCy-wD-siM" secondAttribute="trailing" constant="30" id="jAK-Od-wbl"/>
+                                    <constraint firstItem="MCy-wD-siM" firstAttribute="top" secondItem="tsf-NP-Z1B" secondAttribute="top" id="jpg-e3-gOc"/>
+                                    <constraint firstAttribute="bottom" secondItem="MCy-wD-siM" secondAttribute="bottom" id="lgw-oH-K5n"/>
+                                    <constraint firstAttribute="height" constant="44" id="pDV-Pd-POj"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tsf-NP-Z1B" secondAttribute="trailing" id="7J3-b9-gbd"/>
                             <constraint firstAttribute="bottomMargin" secondItem="dcj-Bp-B0f" secondAttribute="bottom" id="BCK-aU-zlT"/>
+                            <constraint firstItem="tsf-NP-Z1B" firstAttribute="leading" secondItem="b2o-P4-bKV" secondAttribute="leading" id="VHi-2G-BH7"/>
                             <constraint firstAttribute="trailing" secondItem="dcj-Bp-B0f" secondAttribute="trailing" id="mRl-yh-duI"/>
                             <constraint firstItem="dcj-Bp-B0f" firstAttribute="leading" secondItem="b2o-P4-bKV" secondAttribute="leading" id="mpZ-ig-pcc"/>
                             <constraint firstAttribute="topMargin" secondItem="dcj-Bp-B0f" secondAttribute="top" id="ybd-lL-1XW"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="tsf-NP-Z1B" secondAttribute="bottom" constant="5" id="z8W-AZ-bMd"/>
                         </constraints>
                     </view>
                 </viewController>

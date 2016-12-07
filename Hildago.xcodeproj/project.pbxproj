@@ -45,6 +45,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E8D8576A1DF88169008B4A0D /* Hildago */ = {
+			isa = PBXGroup;
+			children = (
+				E8DF42441DF4300000CE7C38 /* Hildago.storyboard */,
+				E8DF42461DF4363300CE7C38 /* HildagoController.swift */,
+				E8DF42481DF4405000CE7C38 /* HildagoBox.swift */,
+			);
+			name = Hildago;
+			sourceTree = "<group>";
+		};
+		E8D8576B1DF8817A008B4A0D /* Contacts Section */ = {
+			isa = PBXGroup;
+			children = (
+				E8ECF2071DF5A86B00F0484B /* Conctact.swift */,
+				E8DF424A1DF4436C00CE7C38 /* ContactsController.swift */,
+				E8DF424C1DF443B800CE7C38 /* ContactsCell.swift */,
+			);
+			name = "Contacts Section";
+			sourceTree = "<group>";
+		};
+		E8D8576C1DF8818E008B4A0D /* Converzation Section */ = {
+			isa = PBXGroup;
+			children = (
+				E8D857681DF86F2C008B4A0D /* ConverzationController.swift */,
+			);
+			name = "Converzation Section";
+			sourceTree = "<group>";
+		};
 		E8DF42261DF42E6C00CE7C38 = {
 			isa = PBXGroup;
 			children = (
@@ -67,13 +95,9 @@
 				E8DF42321DF42E6C00CE7C38 /* AppDelegate.swift */,
 				E8DF42391DF42E6C00CE7C38 /* Assets.xcassets */,
 				E8DF423B1DF42E6C00CE7C38 /* LaunchScreen.storyboard */,
-				E8DF42441DF4300000CE7C38 /* Hildago.storyboard */,
-				E8DF42461DF4363300CE7C38 /* HildagoController.swift */,
-				E8DF42481DF4405000CE7C38 /* HildagoBox.swift */,
-				E8ECF2071DF5A86B00F0484B /* Conctact.swift */,
-				E8DF424A1DF4436C00CE7C38 /* ContactsController.swift */,
-				E8DF424C1DF443B800CE7C38 /* ContactsCell.swift */,
-				E8D857681DF86F2C008B4A0D /* ConverzationController.swift */,
+				E8D8576A1DF88169008B4A0D /* Hildago */,
+				E8D8576B1DF8817A008B4A0D /* Contacts Section */,
+				E8D8576C1DF8818E008B4A0D /* Converzation Section */,
 				E8DF423E1DF42E6C00CE7C38 /* Info.plist */,
 			);
 			path = Hildago;

@@ -195,16 +195,28 @@
                     <view key="view" contentMode="scaleToFill" id="b2o-P4-bKV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="bcg3" translatesAutoresizingMaskIntoConstraints="NO" id="dcj-Bp-B0f">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="dcj-Bp-B0f" secondAttribute="bottom" id="BCK-aU-zlT"/>
+                            <constraint firstAttribute="trailing" secondItem="dcj-Bp-B0f" secondAttribute="trailing" id="mRl-yh-duI"/>
+                            <constraint firstItem="dcj-Bp-B0f" firstAttribute="leading" secondItem="b2o-P4-bKV" secondAttribute="leading" id="mpZ-ig-pcc"/>
+                            <constraint firstAttribute="topMargin" secondItem="dcj-Bp-B0f" secondAttribute="top" id="ybd-lL-1XW"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1EC-w0-YCq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="971" y="794"/>
+            <point key="canvasLocation" x="967" y="800"/>
         </scene>
     </scenes>
     <resources>
         <image name="bcg2" width="375" height="667"/>
+        <image name="bcg3" width="375" height="667"/>
         <image name="marija" width="290" height="289"/>
     </resources>
 </document>

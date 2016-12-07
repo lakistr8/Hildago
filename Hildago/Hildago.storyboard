@@ -195,14 +195,14 @@
                         <viewControllerLayoutGuide type="top" id="1Xy-9U-Qyg"/>
                         <viewControllerLayoutGuide type="bottom" id="Iev-fa-4Dz"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="b2o-P4-bKV" userLabel="keyBoard">
+                    <view key="view" contentMode="scaleToFill" id="b2o-P4-bKV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="bcg3" translatesAutoresizingMaskIntoConstraints="NO" id="dcj-Bp-B0f">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tsf-NP-Z1B">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tsf-NP-Z1B" userLabel="Keyboard">
                                 <rect key="frame" x="0.0" y="618" width="375" height="44"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type a massage" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W17-Um-cks">
@@ -232,12 +232,43 @@
                                     <constraint firstAttribute="height" constant="44" id="pDV-Pd-POj"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fwK-Ma-tHt" userLabel="ContectInfo">
+                                <rect key="frame" x="0.0" y="64" width="375" height="60"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marija" translatesAutoresizingMaskIntoConstraints="NO" id="EQV-Ip-Nlb">
+                                        <rect key="frame" x="20" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="uNv-Bl-ewQ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mitic Marija" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhG-Jb-GLj">
+                                        <rect key="frame" x="110" y="0.0" width="265" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="EQV-Ip-Nlb" firstAttribute="leading" secondItem="fwK-Ma-tHt" secondAttribute="leading" constant="20" id="28T-LM-pnO"/>
+                                    <constraint firstAttribute="bottom" secondItem="WhG-Jb-GLj" secondAttribute="bottom" id="BV7-cw-ekW"/>
+                                    <constraint firstItem="WhG-Jb-GLj" firstAttribute="leading" secondItem="EQV-Ip-Nlb" secondAttribute="trailing" constant="30" id="S1y-ap-tb7"/>
+                                    <constraint firstItem="EQV-Ip-Nlb" firstAttribute="top" secondItem="fwK-Ma-tHt" secondAttribute="top" id="Sm5-Dv-7en"/>
+                                    <constraint firstItem="WhG-Jb-GLj" firstAttribute="top" secondItem="fwK-Ma-tHt" secondAttribute="top" id="Z0x-Ni-HUY"/>
+                                    <constraint firstAttribute="bottom" secondItem="EQV-Ip-Nlb" secondAttribute="bottom" id="acy-17-TmS"/>
+                                    <constraint firstAttribute="height" constant="60" id="eHx-4p-kgX"/>
+                                    <constraint firstAttribute="trailing" secondItem="WhG-Jb-GLj" secondAttribute="trailing" id="s1o-Ik-c07"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="tsf-NP-Z1B" secondAttribute="trailing" id="7J3-b9-gbd"/>
                             <constraint firstAttribute="bottomMargin" secondItem="dcj-Bp-B0f" secondAttribute="bottom" id="BCK-aU-zlT"/>
+                            <constraint firstItem="fwK-Ma-tHt" firstAttribute="top" secondItem="1Xy-9U-Qyg" secondAttribute="bottom" id="EFa-Qm-EHz"/>
                             <constraint firstItem="tsf-NP-Z1B" firstAttribute="leading" secondItem="b2o-P4-bKV" secondAttribute="leading" id="VHi-2G-BH7"/>
+                            <constraint firstAttribute="trailing" secondItem="fwK-Ma-tHt" secondAttribute="trailing" id="ZUU-D1-9JK"/>
+                            <constraint firstItem="fwK-Ma-tHt" firstAttribute="leading" secondItem="b2o-P4-bKV" secondAttribute="leading" id="eqN-no-VrA"/>
                             <constraint firstAttribute="trailing" secondItem="dcj-Bp-B0f" secondAttribute="trailing" id="mRl-yh-duI"/>
                             <constraint firstItem="dcj-Bp-B0f" firstAttribute="leading" secondItem="b2o-P4-bKV" secondAttribute="leading" id="mpZ-ig-pcc"/>
                             <constraint firstAttribute="topMargin" secondItem="dcj-Bp-B0f" secondAttribute="top" id="ybd-lL-1XW"/>
@@ -247,7 +278,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1EC-w0-YCq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="972" y="904"/>
+            <point key="canvasLocation" x="972" y="903.59820089955031"/>
         </scene>
     </scenes>
     <resources>

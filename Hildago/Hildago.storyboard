@@ -149,6 +149,9 @@
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHe-QA-dwe">
                                             <rect key="frame" x="110" y="0.0" width="265" height="65.5"/>
+                                            <connections>
+                                                <segue destination="RmL-Om-bvL" kind="show" identifier="ConverzationController" id="d8N-7y-GTO"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -182,12 +185,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LOU-hz-ARn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1396" y="141.67916041979012"/>
+            <point key="canvasLocation" x="1580" y="142"/>
         </scene>
-        <!--View Controller-->
+        <!--Converzation Controller-->
         <scene sceneID="YcE-d9-Ewc">
             <objects>
-                <viewController id="RmL-Om-bvL" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ConverzationController" id="RmL-Om-bvL" customClass="ConverzationController" customModule="Hildago" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1Xy-9U-Qyg"/>
                         <viewControllerLayoutGuide type="bottom" id="Iev-fa-4Dz"/>
@@ -211,7 +214,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1EC-w0-YCq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="967" y="800"/>
+            <point key="canvasLocation" x="972" y="904"/>
         </scene>
     </scenes>
     <resources>

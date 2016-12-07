@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E8D857691DF86F2C008B4A0D /* ConverzationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D857681DF86F2C008B4A0D /* ConverzationController.swift */; };
 		E8DF42331DF42E6C00CE7C38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DF42321DF42E6C00CE7C38 /* AppDelegate.swift */; };
 		E8DF423A1DF42E6C00CE7C38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8DF42391DF42E6C00CE7C38 /* Assets.xcassets */; };
 		E8DF423D1DF42E6C00CE7C38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8DF423B1DF42E6C00CE7C38 /* LaunchScreen.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E8D857681DF86F2C008B4A0D /* ConverzationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverzationController.swift; sourceTree = "<group>"; };
 		E8DF422F1DF42E6C00CE7C38 /* Hildago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hildago.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8DF42321DF42E6C00CE7C38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8DF42391DF42E6C00CE7C38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				E8ECF2071DF5A86B00F0484B /* Conctact.swift */,
 				E8DF424A1DF4436C00CE7C38 /* ContactsController.swift */,
 				E8DF424C1DF443B800CE7C38 /* ContactsCell.swift */,
+				E8D857681DF86F2C008B4A0D /* ConverzationController.swift */,
 				E8DF423E1DF42E6C00CE7C38 /* Info.plist */,
 			);
 			path = Hildago;
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8D857691DF86F2C008B4A0D /* ConverzationController.swift in Sources */,
 				E8DF42471DF4363300CE7C38 /* HildagoController.swift in Sources */,
 				E8DF42331DF42E6C00CE7C38 /* AppDelegate.swift in Sources */,
 				E8ECF2081DF5A86B00F0484B /* Conctact.swift in Sources */,

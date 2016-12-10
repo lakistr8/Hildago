@@ -80,19 +80,59 @@
                                     <outlet property="contactButton" destination="acZ-J3-TyM" id="4Sp-fM-g1m"/>
                                 </connections>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PDC-7t-Fcy">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PDC-7t-Fcy">
                                 <rect key="frame" x="0.0" y="144" width="375" height="523"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="8Ms-4u-Ca3">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ChatCell" rowHeight="66" id="8Ms-4u-Ca3" customClass="ChatCell" customModule="Hildago" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="66"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Ms-4u-Ca3" id="JXi-yz-U9J">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marija" translatesAutoresizingMaskIntoConstraints="NO" id="ovB-oI-C7V">
+                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="65.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="mKu-ce-hP2"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marija Mitic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwW-29-WOk">
+                                                    <rect key="frame" x="90" y="0.0" width="285" height="65.5"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03d-42-fss">
+                                                    <rect key="frame" x="90" y="0.0" width="285" height="65.5"/>
+                                                    <connections>
+                                                        <segue destination="RmL-Om-bvL" kind="show" identifier="ConverzationController" id="YoX-cZ-1uy"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="03d-42-fss" firstAttribute="trailing" secondItem="xwW-29-WOk" secondAttribute="trailing" id="0NU-nO-sRU"/>
+                                                <constraint firstItem="xwW-29-WOk" firstAttribute="leading" secondItem="ovB-oI-C7V" secondAttribute="trailing" constant="30" id="7Li-NX-hrl"/>
+                                                <constraint firstItem="03d-42-fss" firstAttribute="leading" secondItem="xwW-29-WOk" secondAttribute="leading" id="82F-lf-htu"/>
+                                                <constraint firstAttribute="trailing" secondItem="xwW-29-WOk" secondAttribute="trailing" id="BNI-A6-riL"/>
+                                                <constraint firstItem="xwW-29-WOk" firstAttribute="top" secondItem="JXi-yz-U9J" secondAttribute="top" id="GI0-IN-6Pm"/>
+                                                <constraint firstItem="03d-42-fss" firstAttribute="bottom" secondItem="xwW-29-WOk" secondAttribute="bottom" id="JRx-QS-h7b"/>
+                                                <constraint firstItem="ovB-oI-C7V" firstAttribute="top" secondItem="JXi-yz-U9J" secondAttribute="top" id="PKk-5c-zv9"/>
+                                                <constraint firstAttribute="bottom" secondItem="xwW-29-WOk" secondAttribute="bottom" id="ZOz-S5-S7A"/>
+                                                <constraint firstItem="ovB-oI-C7V" firstAttribute="leading" secondItem="JXi-yz-U9J" secondAttribute="leading" id="o9k-Hb-i2U"/>
+                                                <constraint firstItem="03d-42-fss" firstAttribute="top" secondItem="xwW-29-WOk" secondAttribute="top" id="paY-8x-uqb"/>
+                                                <constraint firstAttribute="bottom" secondItem="ovB-oI-C7V" secondAttribute="bottom" id="zJf-eO-Kek"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Jvf-iI-x0F" id="ft4-Az-npP"/>
+                                    <outlet property="delegate" destination="Jvf-iI-x0F" id="FxI-MY-mjh"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -286,4 +326,7 @@
         <image name="bcg3" width="375" height="667"/>
         <image name="marija" width="290" height="289"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="YoX-cZ-1uy"/>
+    </inferredMetricsTieBreakers>
 </document>

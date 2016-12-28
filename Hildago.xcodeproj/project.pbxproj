@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF8E4E5FFF98E34147418F91 /* libPods-Hildago.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3A916DEEE0B72776DD6F68 /* libPods-Hildago.a */; };
 		E8D857691DF86F2C008B4A0D /* ConverzationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D857681DF86F2C008B4A0D /* ConverzationController.swift */; };
 		E8DF42331DF42E6C00CE7C38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DF42321DF42E6C00CE7C38 /* AppDelegate.swift */; };
 		E8DF423A1DF42E6C00CE7C38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8DF42391DF42E6C00CE7C38 /* Assets.xcassets */; };
@@ -21,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C3A916DEEE0B72776DD6F68 /* libPods-Hildago.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Hildago.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90353DE285BE80CF70F03FE1 /* Pods-Hildago.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hildago.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hildago/Pods-Hildago.release.xcconfig"; sourceTree = "<group>"; };
+		BCCC9EFED6DE70F91AC70723 /* Pods-Hildago.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hildago.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hildago/Pods-Hildago.debug.xcconfig"; sourceTree = "<group>"; };
 		E8D857681DF86F2C008B4A0D /* ConverzationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverzationController.swift; sourceTree = "<group>"; };
 		E8DF422F1DF42E6C00CE7C38 /* Hildago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hildago.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8DF42321DF42E6C00CE7C38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,12 +45,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF8E4E5FFF98E34147418F91 /* libPods-Hildago.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D547CEF7079C37021DD0650 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BCCC9EFED6DE70F91AC70723 /* Pods-Hildago.debug.xcconfig */,
+				90353DE285BE80CF70F03FE1 /* Pods-Hildago.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B6EAD5AE3705EE00DAB41054 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C3A916DEEE0B72776DD6F68 /* libPods-Hildago.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E8D8576A1DF88169008B4A0D /* Hildago */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,8 @@
 			children = (
 				E8DF42311DF42E6C00CE7C38 /* Hildago */,
 				E8DF42301DF42E6C00CE7C38 /* Products */,
+				5D547CEF7079C37021DD0650 /* Pods */,
+				B6EAD5AE3705EE00DAB41054 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,9 +137,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8DF42411DF42E6C00CE7C38 /* Build configuration list for PBXNativeTarget "Hildago" */;
 			buildPhases = (
+				C2B0161432FD58BF14E65271 /* [CP] Check Pods Manifest.lock */,
 				E8DF422B1DF42E6C00CE7C38 /* Sources */,
 				E8DF422C1DF42E6C00CE7C38 /* Frameworks */,
 				E8DF422D1DF42E6C00CE7C38 /* Resources */,
+				0C04C5EFF77335193C062C4D /* [CP] Embed Pods Frameworks */,
+				514A2E38A31C509E944BF0CF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -172,6 +199,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C04C5EFF77335193C062C4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hildago/Pods-Hildago-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		514A2E38A31C509E944BF0CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hildago/Pods-Hildago-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2B0161432FD58BF14E65271 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E8DF422B1DF42E6C00CE7C38 /* Sources */ = {
@@ -298,6 +373,7 @@
 		};
 		E8DF42421DF42E6C00CE7C38 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCCC9EFED6DE70F91AC70723 /* Pods-Hildago.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Hildago/Info.plist;
@@ -310,6 +386,7 @@
 		};
 		E8DF42431DF42E6C00CE7C38 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90353DE285BE80CF70F03FE1 /* Pods-Hildago.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Hildago/Info.plist;

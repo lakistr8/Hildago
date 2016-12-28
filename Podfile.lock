@@ -2,14 +2,17 @@ PODS:
   - JSQMessagesViewController (7.3.4):
     - JSQSystemSoundPlayer (~> 2.0.1)
   - JSQSystemSoundPlayer (2.0.1)
+  - SlackTextViewController (1.9.5)
 
 DEPENDENCIES:
   - JSQMessagesViewController
+  - SlackTextViewController
 
 SPEC CHECKSUMS:
   JSQMessagesViewController: 39fed975e3c9f8eba7292071e29eeb541d105e66
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
+  SlackTextViewController: fbcdadbb8090673f604484ff5b6eb8d77baed42a
 
-PODFILE CHECKSUM: 5d2d8a963f86ed2fefc987c52872c82cb93db26d
+PODFILE CHECKSUM: c8ccd1bf535e6ec5603b10957fbf2558812a10fa
 
 COCOAPODS: 1.1.1
